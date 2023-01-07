@@ -22,6 +22,16 @@ const router = createBrowserRouter([
     }
   ]);
 
+  // Note, when redux state changes need to result in changing the router state,
+  // propagate the state change to a component and let the component trigger the router change.
+  // For this, you can keep a form submission state in the Redux store and update the variable 
+  // on API call response of the form.
+  // https://www.pluralsight.com/guides/using-react-router-with-redux
+
+
+  // TODO: implement react redux
+  // https://react-redux.js.org/introduction/getting-started
+  
   ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
       <RouterProvider router={router} />
